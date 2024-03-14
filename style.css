@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #88dfff;
+  line-height: 1;
+  font-family: Inter, sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Layout */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(93, 93, 93);
+  border-radius: 20px;
+  width: 600px;
+  height: 600px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 80%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgb(93, 93, 93);
+  border-radius: 15px;
+  padding: 10px 0px 10px 10px;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wrapper-inputs {
+  display: flex;
+  width: 100%;
+}
+
+.labels, 
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 60%;
+}
+
+.inputs {
+  width: 40%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin-left: 10px;
+}
+
+.submit__btn {
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.submit__btn:hover {
+  border-color: rgb(93, 93, 93);
+  color: rgb(93, 93, 93);
+}
